@@ -5,7 +5,7 @@ import astropy.units as u
 
 
 
-def match_cats(RA, Dec, refRA, refDec, threshold):
+def match_cats(RA, Dec, refRA, refDec):
     """Match a catalog of RA's and Dec's to a reference catalog
     (refRA and refDec).
     
