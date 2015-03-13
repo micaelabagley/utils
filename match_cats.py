@@ -30,7 +30,7 @@ def match_cats(RA, Dec, refRA, refDec):
 
 
 def main():
-    match_cats(RA, Dec, refRA, refDec, threshold)
+    match_cats(RA, Dec, refRA, refDec)
 
 
 if __name__ == '__main__':
