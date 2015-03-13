@@ -21,12 +21,16 @@ def match_cats(RA, Dec, refRA, refDec):
     # dist3d - 3D distance between closest matches
     idx,sep2d,dist3d = match_coordinates_sky(SC_cat, SC_refcat)
     # convert separation to arcsecs
-    separc = sep2d * u.arcsec
-    return (idx,separc)
+    #separc = sep2d * u.arcsec
+    #separc = sep2d.to(u.arcsec)
+    #separc = sep2d.is_within_bounds(upper=threshold*u.arcsec)
+    #print threshold
+    #return (idx,separc)
+    return (idx,sep2d)
 
 
 def main():
-    match_cats(RA, Dec, refRA, refDec)
+    match_cats(RA, Dec, refRA, refDec, threshold)
 
 
 if __name__ == '__main__':
