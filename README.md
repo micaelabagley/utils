@@ -4,8 +4,8 @@ A package of modules common to and useful for all projects
 
 ### Repo Contents ###
 
-+ * `match_cats.py` - Match a catalog of RA and Dec to a reference catalog
---------------------
++ `match_cats.py` - Match a catalog of RA and Dec to a reference catalog
+-----------------
     * Input: 
         * `RA`, `Dec` of catalog to be matched
         * `refRA`, `refDec` of reference catalog
@@ -15,8 +15,8 @@ A package of modules common to and useful for all projects
 
 * * *
 
-+ * `opt_hist.py` - Calculate the optimal bin size for histogrammed data
-----------------------
++ `opt_hist.py` - Calculate the optimal bin size for histogrammed data
+-----------------
     * Options:
         * `scotts_bins` -  Use Scott's rule to determine bin size. Best for random samples of normally distributed data
         * `freedman_diaconis_bins` - Use Freedman-Diaconis rule to determine bin size. The interquartile range (IQR) is less sensitive to outliers
@@ -29,6 +29,6 @@ A package of modules common to and useful for all projects
 
 * * *
 
-+ * `centroids.py` - Class for different centroiding algorithms
++ `centroids.py` - Class for different centroiding algorithms
 ---------------------
     *
