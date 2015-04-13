@@ -18,7 +18,7 @@ A package of modules common to and useful for all projects
     * Options:
         * `scotts_bins` -  Use Scott's rule to determine bin size. Best for random samples of normally distributed data
         * `freedman_diaconis_bins` - Use Freedman-Diaconis rule to determine bin size. The interquartile range (IQR) is less sensitive to outliers
-    * Intput:
+    * Input:
         * `data` - array of values to be binned
     * Return:
         * `binsize` - the optimal bin size
@@ -29,4 +29,10 @@ A package of modules common to and useful for all projects
 
 * `centroids.py` - `Centroids`, Class for different centroiding algorithms
     * Options:
-        * `Centroids.gauss_centroid()'
+        * `gauss_centroid()'
+        * Input:
+            * `im` - image, data array
+            * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
+            * `size` - centroid is fit over a (2*size)^2 subsection of the image 
+            * `sig_init` - array of initial guesses for sigma [sig_x, sig_y]
+        * Returns:
