@@ -24,3 +24,8 @@ A package of modules common to and useful for all projects
         * `binsize` - the optimal bin size
         * `nbins` - the number of bins of this size spanning the range of `data`
         * `bins` - the array of bins
+
+* * *
+
+* `centroids.py` - Class for different centroiding algorithms
+    * 
