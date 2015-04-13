@@ -30,10 +30,10 @@ A package of modules common to and useful for all projects
 * `centroids.py` - `Centroids`, Class for different centroiding algorithms
     * Options:
         * `gauss_centroid()'
-        * Input:
-            * `im` - image, data array
-            * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
-            * `size` - centroid is fit over a (2*size)^2 subsection of the image 
-            * `sig_init` - array of initial guesses for sigma, [sig_x, sig_y]
-        * Returns:
-            * `cenx`, `ceny` - centroid x,y positions
+    * Input:
+        * `im` - image, data array
+        * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
+        * `size` - centroid is fit over a (2*size)^2 subsection of the image 
+        * `sig_init` - array of initial guesses for sigma, [sig_x, sig_y]
+    * Returns:
+        * `cenx`, `ceny` - centroid x,y positions
