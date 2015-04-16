@@ -30,6 +30,7 @@ A package of modules common to and useful for all projects
 * `centroids.py` - `Centroids`, Class for different centroiding algorithms
     * Options:
         * `gauss_centroid()`
+        * NOTE - `daofind` from `photutils` is probably better for this
     * Input:
         * `im` - image, data array
         * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
