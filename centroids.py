@@ -6,6 +6,7 @@ except:
     print 'astropy.modeling module not installed'
     exit()
 
+
 class Centroids():
 
     def __init__(self, im, coords_init, size, sig_init):
@@ -23,6 +24,7 @@ class Centroids():
 
         # get initial guesses for the parameters
         sz = self.size
+        
         amplitude = np.max(self.im[self.y_init-sz:self.y_init+sz, 
                                    self.x_init-sz:self.x_init+sz])
 
@@ -33,6 +35,7 @@ class Centroids():
         x,y = np.mgrid[self.x_init-sz:self.x_init+sz, 
                        self.y_init-sz:self.y_init+sz]
 
+        
         p = fitter(g_init, x, y, self.im[self.x_init-sz:self.x_init+sz, 
                                          self.y_init-sz:self.y_init+sz])
 
