@@ -4,6 +4,20 @@ A package of modules common to and useful for all projects
 
 ### Repo Contents ###
 
+* `centroids.py` - `Centroids`, Class for different centroiding algorithms
+    * Options:
+        * `gauss_centroid()`
+        * NOTE - `daofind` from `photutils` is probably better for this
+    * Input:
+        * `im` - image, data array
+        * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
+        * `size` - centroid is fit over a (2*size)^2 subsection of the image 
+        * `sig_init` - array of initial guesses for sigma, [sig_x, sig_y]
+    * Returns:
+        * `cenx`, `ceny` - centroid x,y positions
+
+* * *
+
 * `match_cats.py` - Match a catalog of RA and Dec to a reference catalog
     * Input: 
         * `RA`, `Dec` of catalog to be matched
@@ -25,16 +39,15 @@ A package of modules common to and useful for all projects
         * `nbins` - the number of bins of this size spanning the range of `data`
         * `bins` - the array of bins
 
+* * * 
+
+* `timing.py` - Print start and end time of a program
+
+* * *
 * * *
 
-* `centroids.py` - `Centroids`, Class for different centroiding algorithms
-    * Options:
-        * `gauss_centroid()`
-        * NOTE - `daofind` from `photutils` is probably better for this
-    * Input:
-        * `im` - image, data array
-        * `coords_init` - array of initial guesses for centroid positions, [x_init, y_init]
-        * `size` - centroid is fit over a (2*size)^2 subsection of the image 
-        * `sig_init` - array of initial guesses for sigma, [sig_x, sig_y]
-    * Returns:
-        * `cenx`, `ceny` - centroid x,y positions
+### In Progress ###
+* `centroids.py` - Add more centroiding options
+* `obs.py` - Check coordinate conversions
+* `rot_box.py` - Needs finishing
+
